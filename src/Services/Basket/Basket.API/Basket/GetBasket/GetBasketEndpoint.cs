@@ -2,7 +2,7 @@
 
 //public record GetBasketRequest(string UserName);
 public record GetBasketResponse(ShoppingCart Cart);
-public class GetBasketEndpoints : ICarterModule
+public class GetBasketEndpoint : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
@@ -13,7 +13,7 @@ public class GetBasketEndpoints : ICarterModule
             return Results.Ok(response);
         })
         .WithName("GetBasket")
-        .Produces<GetBasketEndpoints>(StatusCodes.Status200OK)
+        .Produces<GetBasketEndpoint>(StatusCodes.Status200OK)
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .WithSummary("Get Basket By UserName")
         .WithDescription("Get Basket By UserName");
