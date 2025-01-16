@@ -111,7 +111,7 @@ This project contains multiple e-commerce modules and services, including:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Mahmoudyoussef7/eshop-microservices.git
+   git clone https://github.com/Mahmoudyoussef7/EShopMicroservices.git
    cd eshop-microservices
    ```
 2. Build and run the Docker containers:
